@@ -8,7 +8,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 @ApplicationPath("resources")
 public class MyApplication extends ResourceConfig {
     public MyApplication() {
-    	super.registerClasses(SseFeature.class,MyResource.class,MyResourceSSE.class);
+    	super.registerClasses(SseFeature.class,MyResource.class,MyResourceSSE.class, MyBroadcasterSSE.class);
 //        packages("com.example");
     }
 }
