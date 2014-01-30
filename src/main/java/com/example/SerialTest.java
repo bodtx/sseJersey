@@ -15,19 +15,19 @@ import javax.ws.rs.core.MediaType;
 
 import org.glassfish.jersey.media.sse.OutboundEvent;
 import org.glassfish.jersey.media.sse.SseBroadcaster;
-import org.jvnet.hk2.annotations.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * @author CER3100441
  * 
  */
 @Singleton
-@Service
+@Component
 public class SerialTest implements SerialPortEventListener {
     SerialPort serialPort;
     SseBroadcaster broadcaster = new SseBroadcaster();
     /** The port we're normally going to use. */
-    private static final String PORT_NAMES[] = {// "/dev/tty.usbserial-A9007UX1", // Mac OS X
+    protected static final String PORT_NAMES[] = {// "/dev/tty.usbserial-A9007UX1", // Mac OS X
     // "/dev/ttyUSB0", // Linux
     "COM4", // Windows
     };
