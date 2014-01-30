@@ -46,8 +46,17 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet</artifactId>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>3.2.6.RELEASE</version>
+        </dependency>
+        <dependency>
+        <groupId>org.glassfish.jersey.ext</groupId>
+        <artifactId>jersey-spring3</artifactId>
+        </dependency>
+        <dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-servlet</artifactId>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
@@ -57,6 +66,31 @@
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-sse</artifactId>
         </dependency>
+<!--         <dependency> -->
+<!--             <groupId>javax.ws.rs</groupId> -->
+<!--             <artifactId>javax.ws.rs-api</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--             <version>2.0</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>javax.annotation</groupId> -->
+<!--             <artifactId>javax.annotation-api</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--             <version>1.2</version> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>javax.enterprise</groupId> -->
+<!--             <artifactId>cdi-api</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--             <version>1.0</version> -->
+<!--         </dependency> -->
+<!--         <dependency> this is to avoid Jersey jars to be bundled with the WAR -->
+<!--             <groupId>org.glassfish.jersey.containers</groupId> -->
+<!--             <artifactId>jersey-container-servlet-core</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--         </dependency> -->
+
+
         <dependency>
             <groupId>org.rxtx</groupId>
             <artifactId>rxtx</artifactId>
