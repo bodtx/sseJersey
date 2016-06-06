@@ -17,10 +17,7 @@ import org.glassfish.jersey.media.sse.OutboundEvent;
 import org.glassfish.jersey.media.sse.SseBroadcaster;
 import org.springframework.stereotype.Component;
 
-/**
- * @author CER3100441
- * 
- */
+
 @Singleton
 @Component
 public class SerialTest implements SerialPortEventListener {
